@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --grad-violet: hsl(273, 75%, 66%);
+  --grad-blue: hsl(240, 73%, 65%);
+  --text1: hsl(237, 12%, 33%);
+  --text2: hsl(240, 6%, 50%);
+  --line: hsl(240, 5%, 91%);
+  --height: 46px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--grad-violet), var(--grad-blue));
+  color: var(--text2);
+}
+
+.card {
+  display: flex;
+  width: 760px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-img-box {
+  position: absolute;
+  width: 176px;
+  top: 170px;
+  left: -86px;
+  z-index: 3;
+}
+
+.card-left {
+  width: 342px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-left-img-woman {
+  width: 400px;
+  position: relative;
+  top: 210px;
+  left: -76px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.card-left-img-pattern {
+  width: 200%;
+  position: absolute;
+  top: -35%;
+  left: -100%;
+  z-index: 1;
+}
+
+.card-right {
+  width: 418px;
+  padding: 50px 90px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 22px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.faqs {
+  width: 100%;
+}
+
+.faq-container {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-question {
+  height: var(--height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text2);
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.faq-question:hover {
+  color: var(--Soft-red);
+  font-weight: 700;
+}
+
+.flecha {
+  width: 12px;
+  height: 7px;
+  transition: transform 0.3s ease;
+}
+
+.faq-response {
+  display: none;
+  padding: 10px 0;
+}
+
+/* estilos por eventos js */
+.faq-question-text {
+  transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+.faq-container.active .faq-response {
+  display: block;
+}
+
+.faq-container.active .flecha {
+  transform: rotate(180deg);
+}
+
+.faq-container.active .faq-question-text {
+  font-weight: 700;
+  color: var(--Soft-red);
+}
