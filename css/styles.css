@@ -134,5 +134,49 @@ body {
 
 .faq-container.active .faq-question-text {
   font-weight: 700;
-  color: var(--Soft-red);
+  color: var(--Very-dark-desaturated-blue);
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 120px 0;
+  }
+  .card-left {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: visible;
+  }
+  .card-img-box {
+    position: absolute;
+    margin: -206px 0 0 134px;
+    width: 26%;
+  }
+  .card-left-img-woman {
+    width: 70%;
+    position: static;
+    transform: none;
+    margin: -108px 0 0 50px;
+  }
+  .card-right {
+    width: 100%;
+    padding: 40px 20px;
+    gap: 16px;
+  }
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-response {
+    font-size: 13px;
+  }
 }
