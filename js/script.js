@@ -8,7 +8,7 @@ faqsArrays.forEach(faq => {
   faqQuestion.classList.add('faq-question');
   faqQuestion.innerHTML = `
   <span class='faq-question-text'>${faq.question}</span>
-  <img src='./images/icon-arrow-down.svg' alt='illustration-img-woman' class='flecha'/>
+  <img src='./images/icon-arrow-down.svg' alt='illustration-img-arrow' class='flecha'/>
   `;
 
   const faqResponse = document.createElement('div');
