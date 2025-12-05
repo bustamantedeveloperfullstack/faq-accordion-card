@@ -20,14 +20,13 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, var(--grad-violet), var(--grad-blue));
   color: var(--text2);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
 }
 
 .card {
@@ -73,7 +72,7 @@ body {
 
 .card-right {
   width: 418px;
-  padding: 50px 90px 50px 50px;
+  padding: 50px 90px 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,9 +80,9 @@ body {
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--Very-dark-desaturated-blue);
+  font-size: 32px;
+  font-weight: 700px;
+  color: var(--text1);
 }
 
 .faqs {
@@ -101,7 +100,6 @@ body {
   align-items: center;
   cursor: pointer;
   color: var(--text2);
-  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .faq-question:hover {
@@ -112,19 +110,20 @@ body {
 .flecha {
   width: 12px;
   height: 7px;
-  transition: transform 0.3s ease;
 }
 
 .faq-response {
   display: none;
+  font-size: 12px;
   padding: 10px 0;
+  color: var(--text2);
 }
 
-/* estilos por eventos js */
 .faq-question-text {
   transition: font-weight 0.3s ease, color 0.3s ease;
 }
 
+/* estilos por eventos js */
 .faq-container.active .faq-response {
   display: block;
 }

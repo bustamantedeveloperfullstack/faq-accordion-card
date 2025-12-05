@@ -1,4 +1,4 @@
-const faqArrays = [
+const faqsArrays = [
   {
     id: 1,
     question: "How many team members can I invite?",
